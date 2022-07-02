@@ -5,7 +5,7 @@
         <h2>Etsy Calculation</h2>
         <form name="form" [formGroup]="form" (ngSubmit)="form.valid && onSubmit()">
           <div class="form-group">
-            <label for="firstName">Etsy fee</label>
+            <label for="firstName">Etsy fee in DOLLAR</label>
             <input type="text"  class="form-control" formControlName="firstName" [ngClass]="{'is-invalid':form.get('firstName').touched && form.get('firstName').invalid}" required />
             <div class="invalid-feedback">
               <div>Etsy fee is required</div>
